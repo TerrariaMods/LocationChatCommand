@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terraria;
 using Terraria.ModLoader;
 
 namespace TrenycsChatCommands
@@ -34,8 +29,8 @@ namespace TrenycsChatCommands
         {
             caller.Reply(
                 String.Format(
-                    @"Your current spawn location is: {0}, {1}",
-                        caller.Player.SpawnX, caller.Player.SpawnY
+                    @"loc: {0}, {1}",
+                        caller.Player.position.X, caller.Player.position.Y
                 )
             );
         }
